@@ -1,84 +1,72 @@
----
-name: "🐛 Bug Report"
-about: Create a new ticket for a bug.
-title: "🐛 [BUG] - <title>"
-labels: [
-  "bug"
-]
+name: Bug Report
+description: File a bug report.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+projects: ["octo-org/1", "octo-org/44"]
+assignees:
+  - octocat
+type: bug
 body:
-  - type: textarea
-    id: description
+  - type: markdown
     attributes:
-      label: "Description"
-      description: Please enter an explicit description of your issue
-      placeholder: Short and explicit description of your incident...
-    validations:
-      required: true
+      value: |
+        Thanks for taking the time to fill out this bug report!
   - type: input
-    id: reprod-url
+    id: contact
     attributes:
-      label: "Reproduction URL"
-      description: Please enter your GitHub URL to provide a reproduction of the issue
-      placeholder: ex. https://github.com/USERNAME/REPO-NAME
-    validations:
-      required: true
-  - type: textarea
-    id: reprod
-    attributes:
-      label: "Reproduction steps"
-      description: Please enter an explicit description of your issue
-      value: |
-        1. Go to '...'
-        2. Click on '....'
-        3. Scroll down to '....'
-        4. See error
-      render: bash
-    validations:
-      required: true
-  - type: textarea
-    id: screenshot
-    attributes:
-      label: "Screenshots"
-      description: If applicable, add screenshots to help explain your problem.
-      value: |
-        ![DESCRIPTION](LINK.png)
-      render: bash
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
     validations:
       required: false
   - type: textarea
-    id: logs
+    id: what-happened
     attributes:
-      label: "Logs"
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: bash
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
     validations:
-      required: false
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+      options:
+        - 1.0.2 (Default)
+        - 1.0.3 (Edge)
+      default: 0
+    validations:
+      required: true
   - type: dropdown
     id: browsers
     attributes:
-      label: "Browsers"
-      description: What browsers are you seeing the problem on ?
+      label: What browsers are you seeing the problem on?
       multiple: true
       options:
         - Firefox
         - Chrome
         - Safari
         - Microsoft Edge
-        - Opera
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com).
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
+  - type: upload
+    id: screenshots
+    attributes:
+      label: Upload screenshots
+      description: If applicable, add screenshots to help explain your problem.
     validations:
       required: false
-  - type: dropdown
-    id: os
-    attributes:
-      label: "OS"
-      description: What is the impacted environment ?
-      multiple: true
-      options:
-        - Windows
-        - Linux
-        - Mac
-    validations:
-
----
-
-
