@@ -1,3 +1,4 @@
+---
 name: Bug Report
 description: File a bug report.
 title: "[Bug]: "
@@ -70,3 +71,4 @@ body:
       description: If applicable, add screenshots to help explain your problem.
     validations:
       required: false
+    ---
