@@ -1,4 +1,4 @@
----
+
 name: Bug Report
 about: File a bug report.
 title: "[Bug]: "
@@ -71,6 +71,4 @@ body:
       description: If applicable, add screenshots to help explain your problem.
     validations:
 
----
 
-4545
