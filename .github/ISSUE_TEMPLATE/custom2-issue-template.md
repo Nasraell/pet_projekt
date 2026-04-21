@@ -5,7 +5,6 @@ title: ''
 labels: wontfix
 assignees: ''
 
----
 
 body:
 - type: checkboxes
@@ -17,3 +16,5 @@ body:
       - label: Orange cat (required. Everyone likes orange cats.)
         required: true
       - label: **Black cat**
+---
+
