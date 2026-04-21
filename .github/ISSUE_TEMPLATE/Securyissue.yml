@@ -3,13 +3,16 @@ Descitption: 'Here Be Dragons '
 title: "[Dragon]"
 labels: ''
 assignees: ''
-body: 
--type dropdown 
-id : sec_problem 
-label : What is the type of Problem 
-options :
--smal
--large 
--holy Fuck 
+ - type: dropdown
+    id: Scope
+    attributes:
+      label: How is the scope of the secruity issue 
+      multiple: true
+      options:
+        -  insicnaiftant
+        - smol
+        -  Medeium
+        - large 
+        - Holy Fuck 
   validations:
     required: true
