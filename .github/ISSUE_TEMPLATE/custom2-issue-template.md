@@ -4,8 +4,7 @@ about: Describe this issue template's purpose here.
 title: ''
 labels: wontfix
 assignees: ''
-body:
-- type: checkboxes
+body:- type: checkboxes
   id: cat-preferences
   attributes:
     label: What kinds of cats do you like?
