@@ -5,17 +5,15 @@ title: "[Dragon]"
 labels: ''
 assignees: ''
 body: 
--type dropdown 
-id : sec_problem 
-label : What is the type of Problem 
-options :
--smal
--large 
--holy Fuck 
-  validations:
+  -type dropdown 
+  id : sec_problem 
+    label : What is the type of Problem 
+    options :
+    -smal
+    -large 
+    -holy Fuck 
+validations:
     required: true
-
-
 ---
 
 
