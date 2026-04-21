@@ -5,7 +5,7 @@ title: "[Secrurizy issue]: "
 assignees:
 body:
  - type: dropdown
-    id: Scope
+    id: scope
     attributes:
       label: How is the scope of the secruity issue 
       multiple: true
