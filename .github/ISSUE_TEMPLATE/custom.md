@@ -4,15 +4,17 @@ about: 'Here Be Dragons '
 title: "[Dragon]"
 labels: ''
 assignees: ''
-body: 
-  - type dropdown 
-  id : sec_problem 
-    label : What is the type of Problem 
-    options :
-    - smal
-    - large 
-    - holy Fuck 
-validations:
+body:
+- type: dropdown
+  id: download
+  attributes:
+    label: How did you download the software?
+    options:
+      - Homebrew
+      - MacPorts
+      - apt-get
+      - Built from source
+  validations:
     required: true
 ---
 
