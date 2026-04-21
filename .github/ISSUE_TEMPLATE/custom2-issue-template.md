@@ -4,8 +4,6 @@ about: Describe this issue template's purpose here.
 title: ''
 labels: wontfix
 assignees: ''
-
-
 body:
 - type: checkboxes
   id: cat-preferences
@@ -16,5 +14,5 @@ body:
       - label: Orange cat (required. Everyone likes orange cats.)
         required: true
       - label: **Black cat**
----
+  ---
 
