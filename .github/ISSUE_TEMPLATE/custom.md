@@ -6,14 +6,13 @@ labels: ''
 assignees: ''
 body:
 - type: dropdown
-  id: download
+  id: sec_problem
   attributes:
-    label: How did you download the software?
+    label: What is the type of Problem 
     options:
-      - Homebrew
-      - MacPorts
-      - apt-get
-      - Built from source
+      - smal
+      - large
+      - holy Fuck
   validations:
     required: true
 ---
