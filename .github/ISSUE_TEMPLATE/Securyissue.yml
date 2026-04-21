@@ -2,7 +2,6 @@
 name: Security issue
 description: File a bug report.
 title: "[Secrurizy issue]: "
-assignees:
 body:
  - type: dropdown
     id: scope
